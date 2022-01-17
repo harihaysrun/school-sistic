@@ -1,0 +1,3658 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *buy ticket
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* =================================================================================================
+====================================================================================================
+=================================================MOBILE=============================================
+====================================================================================================
+================================================================================================= */
+
+
+/* =========================================MOBILE HEADER============================================= */
+
+select{
+    -webkit-appearance:none;
+    background-image:url('../img/arrow2.svg');
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+    background-size:15px;
+    cursor:pointer;
+}
+
+select:focus{
+    outline:none;
+}
+
+.nondes{
+    display:block;
+}
+
+
+.mobile{
+    display:block;
+}
+
+
+
+.desktop{
+    display:none;
+}
+
+
+body {
+    background-color:white;
+    font-family:Lucida Grande;
+    padding-top:95px;
+
+}
+
+h1{
+    font-size:23px;
+}
+
+
+/*HEADER*/
+
+.header-grey{
+    display:none;
+}
+
+.header-white{
+    background-color:white;
+    border-bottom:1px solid #b2b2b2;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:15px;
+    padding-right:15px;
+    overflow:auto;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    height:95px;
+    z-index:100;
+    box-shadow:  0px 0px 3px 0px #bababa;
+
+}
+
+.hiddencontainer{
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    max-width:960px;
+}
+
+.everything{
+    overflow:auto;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    width:200px;
+    float:left;
+}
+
+.nav{
+    display:none;
+}
+
+.icons{
+    position:absolute;
+    right:15px;
+    background-color:transparent;
+    padding:0;
+    margin:0;
+    display: flex;
+    align-items: center;
+}
+
+.searchicon{
+    width:35px;
+    height:35px;
+    background-color:transparent;
+    display:inline-block;
+    background-image:url('../img/iconmonstr-magnifier-2.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    cursor:pointer;
+}
+
+.searchbox{
+    display:none;
+}
+
+.hamburgermenuicon{
+    width:35px;
+    height:35px;
+    background-color:transparent;
+    display:inline-block;
+    background-image:url('../img/menu.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    margin-left:25px;
+}
+
+
+
+
+/*mobile search pop up*/
+
+
+.searchpopup{
+    visibility:hidden;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:95px;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:103;
+
+}
+
+.visible2{
+    visibility:visible; 
+}
+
+.searchbox-container{
+    width:100%;
+    background-color:#f1f1f1;
+    padding:15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.searchbox-mobile{
+    display:block;
+    width:100%;
+    border:1px solid #ebebeb;
+    background-color:white;
+    height: 55px;
+    padding:15px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size:15px;
+}
+
+.search-mobile{
+    border:none;
+    background-color:transparent;
+    color:#b2b2b2;
+    width:87%;
+
+}
+
+::placeholder{
+    color:#b2b2b2;
+}
+
+.submit-mobile{
+    width:13%;
+    height:22px;
+    float:right;
+    background-color:transparent;
+    border:none;
+    background-image:url('../img/iconmonstr-magnifier-2.svg');
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:contain;
+
+}
+
+
+/* ========================================MOBILE HOME PAGE============================================= */
+
+
+/*BODY*/
+
+.carousel{
+    width:100%;
+    background-color:blue;
+    height:300px;
+    position:relative;
+
+}
+
+.carousel-img{
+    width:100%;
+    height:100%;
+    background-color:purple;
+    background-image:url('../img/lionking.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.gradientoverlay{
+    width:100%;
+    height:100%;
+    background: linear-gradient(transparent,black);
+    opacity:0.9;
+}
+
+.carousel-header{
+    background-color:transparent;
+    color:white;
+    padding-right:15px;
+    padding-left:15px;
+    font-size:14px;
+    position:absolute;
+    bottom:30px;
+    left:0;
+    width:100%;
+}
+
+.carousel-header h1 {
+    font-size:23px;
+    margin-bottom:5px;
+    padding-top:25px;
+}
+
+.prev{
+    height:25px;
+    width:25px;
+    background-image:url('../img/arrow.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    transform:rotate(180deg);
+    float:left;
+    opacity:0.5;
+}
+
+.next{
+    height:25px;
+    width:25px;
+    background-image:url('../img/arrow.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    float:right;
+    opacity:0.5;
+}
+
+.ptabdes{
+    display:none;
+}
+
+.buy-ticket{
+    width:150px;
+    padding:12px;
+    background-color:blue;
+    border-radius:5px;
+    color:white;
+    background: linear-gradient(#5aa7f7,#3178c2);
+    border:none;
+
+}
+
+
+/*on this week*/
+
+.onthisweek{
+    width:100%;
+    background-color:#f7f7f7;
+    padding-top:30px;
+    padding-bottom:30px;
+    color:#959595;
+
+
+}
+
+.onthisweekdes{
+    display:none;
+}
+
+.onthisweek h1{
+    font-size:20px;
+    margin:0;
+    float:left;
+
+    padding-left:15px;
+}
+
+.onthisweek p{
+    text-align:right;
+    margin-bottom:30px;
+    padding-right:15px;
+}
+
+.dayswrapper{
+    clear:both;
+    overflow-x: auto;
+    background-color:transparent;
+    padding-bottom:10px;
+    height:130px;
+    padding-left:15px;
+}
+
+
+
+.days{
+    background-color:transparent;
+    width:1000px;
+}
+
+.oneday{
+    display:inline-table;
+    background-color:transparent;
+    width:150px;
+    height:110px;
+    font-size:13px;
+
+}
+
+.date{
+    font-size:12px;
+    color:#5aa7f7;
+    margin-bottom:15px;
+}
+
+.otherdate{
+    font-size:12px;
+    color:#959595;
+    margin-bottom:15px;
+}
+
+.eventtitle{
+    color:black;
+    font-size:14px;
+
+}
+
+
+
+
+
+
+/*new releases*/
+
+.newrelease{
+    width:100%;
+    background-color:transparent;
+    padding-top:30px;
+    padding-bottom:30px;
+    color:#959595;
+}
+
+
+.onthisweekdes{
+    display:none;
+}
+
+.newrelease .tabs{
+    border-bottom:2px solid #ebebeb;
+    padding:0;
+    margin-bottom: 25px;
+    padding-bottom:7px;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.newrelease h1{
+    font-size:20px;
+    margin:0;
+}
+
+.newrelease h1 .chosen{
+    color:#5aa7f7;
+    padding-bottom:7px;
+    border-bottom:3px solid #5aa7f7;
+    font-weight:bold;
+}
+
+.newrelease .p{
+    margin-bottom:25px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:transparent;
+    width:100%;
+    
+
+}
+
+.newrelease select{
+    background-color:white;
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:2px solid #b2b2b2;
+    color:#959595;
+}
+
+
+.eventswrapper{
+    clear:both;
+    overflow-x: auto;
+    background-color:transparent;
+    padding-bottom:10px;
+    height:310px;
+}
+
+
+.events{
+    background-color:transparent;
+    width:1310px;
+}
+
+
+
+.event{
+    display:inline-table;
+    background-color:transparent;
+    width:200px;
+    height:250px;
+    font-size:15px;
+
+}
+
+.event img{
+    width:200px;
+    height:auto;
+}
+
+
+.title{
+    padding-top:5px;
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.event-a{
+    display:block;
+    background-color:pink;
+
+}
+
+.event a:hover{
+    text-decoration:none;
+}
+
+.event a:hover .title-span{
+    padding-bottom:2px;
+    border-bottom:2px solid black;
+
+}
+
+.eventdate{
+    background-color:white;
+    background-image:url('../img/date.svg');
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-size:22px;
+    padding-left:30px;
+
+}
+
+.viewall{
+    background-color:white;
+    border:2px solid #959595;
+    padding:15px;
+    border-radius:5px;
+    color:#959595;
+    padding-left:25px;
+    padding-right:25px;
+    margin-top:10px;
+}
+
+
+.promo {
+    background-image:url('../img/stripes.png');
+    width:100%;
+    height:500px;
+    padding:15px;
+    color:#959595;
+    line-height:20px;
+    overflow:hidden
+}
+
+.promodes1{
+    display:none;
+}
+
+
+.promo h1{
+    font-size:20px;
+}
+
+.promo img{
+    display:block;
+    margin:auto;
+}
+
+.masterpass{
+    padding-top:20px;
+}
+
+
+.checkthemout{
+    padding:20px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color:blue;
+    border-radius:5px;
+    color:white;
+    background-color:#5aa7f7;
+    border:none;
+
+}
+
+
+/* ========================================MOBILE SEARCH PAGE============================================= */
+
+
+.searchshow{
+    background-image:url('../img/stripes.png');
+    height:70px;
+    width:100%;
+    padding:23px;
+    color:black;
+    font-size:15px;
+    overflow:auto;
+    text-align:center;
+    margin-bottom:15px;
+
+}
+
+.breadcrumb{
+    background-color:transparent;
+    width:40%;
+    float:left;
+    padding:0;
+}
+
+.buttons {
+    background-color:white;
+    padding:15px;
+    overflow:auto;
+
+}
+
+.advancedsearch{
+    background-color:#5aa7f7;
+    background-image:url('../img/search.svg');
+    background-repeat:no-repeat;
+    background-position:15px center;
+    background-size:25px;
+    border:none;
+    padding:12px;
+    color:white;
+    border-radius:5px;
+    font-size:15px;
+    width:200px;
+    text-align:left;
+    padding-left:55px;
+    float:left;
+    height:44px;
+}
+
+
+
+.viewby{
+    display:none;
+}
+
+
+.p{
+    float:right;
+    margin-bottom:25px;
+    background-color:transparent;
+
+}
+
+select{
+    background-color:white;
+    width:100px;
+    padding:10px;
+    border-radius:5px;
+    border:2px solid #b2b2b2;
+    color:#959595;
+}
+
+.indicator{
+    clear:both;
+    background-color:transparent;
+    font-size:13px;
+    color:#959595;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+
+.green {
+    width:14px;
+    height:14px;
+    background-color:#8dc63f;
+    display:inline-block;
+    margin-right:7px;
+    border-radius:5px;
+}
+
+.orange {
+    width:14px;
+    height:14px;
+    background-color:#f59e4c;
+    display:inline-block;
+    margin-right:7px;
+    margin-left:7px;
+    border-radius:5px;
+
+}
+
+.red {
+    width:14px;
+    height:14px;
+    background-color:#c62c32;
+    display:inline-block;
+    margin-right:7px;
+    margin-left:7px;
+    border-radius:5px;
+}
+
+
+
+.resultbox{
+    background-color:transparent;
+    border:1px solid #ebebeb;
+    transition:all 0.2s;
+    clear:both;
+    width:100%;
+    overflow:auto;
+    position:relative;
+}
+
+.resultbox:hover{
+    background-color:#eef6fe;
+    cursor:pointer;
+}
+
+.resultbox:hover{
+    background-color:#eef6fe;
+    cursor:pointer;
+}
+
+.greendate2{
+    background-color:transparent;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:30%;
+    overflow:auto;
+
+}
+
+.available2{
+    width:12px;
+    background-color:#8dc63f;
+    float:left;
+    height:100%;
+}
+
+.datentime{
+    padding-top:20px;
+    margin-left:30px;
+    background-color:transparent;
+    color:#959595;
+}
+
+.blue{
+    color:#5aa7f7;
+}
+
+.eventsection2 {
+    float:right;
+    background-color:transparent;
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+    padding-top:20px;
+    line-height:20px;
+    padding-bottom:20px;
+    width:70%;
+}
+
+.eventsection2 img{
+    width:100%;
+    height:auto;
+    padding-right:10px;
+    margin-bottom:10px;
+
+
+}
+
+.venue2{
+    padding-top:5px;
+}
+
+.venue2, .category2{
+    color:#959595;
+    font-size:15px;
+    font-weight:normal;
+}
+
+
+.showing{
+    padding-top:20px;
+    text-align:center;
+    color:#959595;
+}
+
+.category3{
+    display:none;
+}
+
+
+
+/* ======================================MOBILE PARAMORE PAGE============================================= */
+
+
+
+.breadcrumb2{
+    display:none;
+}
+
+.artistbgimg{
+    width:100%;
+    background-color:blue;
+    height:300px;
+    position:relative;
+
+}
+
+.artistbgimg-img{
+    width:100%;
+    height:100%;
+    background-color:purple;
+    background-image:url('../img/paramoreheaderpic.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.gradientoverlay{
+    width:100%;
+    height:100%;
+    background: linear-gradient(transparent,black);
+    opacity:0.9;
+}
+
+
+.artistinfo{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:15px;
+    background-color:transparent;
+    color:#959595;
+    font-size:15px;
+    line-height:20px;
+    padding-bottom:25px;
+}
+
+.artistinfo h1{
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    margin-bottom:10px;
+    margin-top:0;
+}
+
+.artistdp{
+    display:none;
+}
+
+.dateicon, .timeicon, .locationicon{
+    display:none;
+}
+
+
+
+.ticketing{
+    background-color:#f1f1f1;
+    padding:15px;
+    color:#959595;
+    font-size:15px;
+    padding-bottom:25px;
+}
+
+
+.labelling{
+    padding-top:10px;
+    clear:both;
+    background-color:transparent;
+    padding-bottom:0px;
+    margin-bottom:20px;
+    overflow:auto;
+    position:relative;
+
+}
+
+.ticketinglabel{
+    background-color:transparent;
+    color:black;
+    font-weight:bold;
+    padding-bottom:5px;
+    border-bottom:3px solid #bababa;
+    width:75px;
+    float:left;
+}
+
+.justtheline{
+    position:absolute;
+    bottom:0px;
+    right:0;
+    width:calc(100% - 75px);
+    border-bottom:2px solid #ebebeb;
+}
+
+
+.typeandprice{
+    background-color:transparent;
+    width:100%;
+}
+
+.blockquote{
+    font-size:15px;
+    padding:15px;
+    background-color:rgb(90,167,247, 0.1);
+    border:1px solid #5aa7f7;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.ticket-type{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom:15px;
+
+}
+
+.tickettype{
+    background-color:transparent;
+    width:70%;
+    margin-bottom:0;
+}
+
+.price{
+    font-weight:bold;
+    color:#8dc63f;
+    margin-bottom:0;
+    text-align:right;
+    width: 30%;
+    background-image:url('../img/ticketlabeldivider.png');
+    background-repeat:no-repeat;
+    background-position:20px;
+    background-size:contain;
+}
+
+.smalltext{
+    font-size:13px;
+    color:#b2b2b2;
+    margin-top:30px;
+    margin-bottom:0;
+}
+
+
+
+
+.bodycontent{
+    width:100%;
+    background-color:white;
+    padding-bottom:30px;
+    color:#959595;
+    padding:15px;
+}
+
+
+.tabs{
+    border-bottom:2px solid #ebebeb;
+    padding:0;
+    margin-bottom: 15px;
+    padding-bottom:7px;
+    font-size:15px;
+    padding-top:10px;
+}
+
+
+.tabs .chosen{
+    color:#5aa7f7;
+    padding-bottom:8px;
+    border-bottom:3px solid #5aa7f7;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.tabs2{
+    border-bottom:2px solid #ebebeb;
+    padding:0;
+    margin-bottom: 15px;
+    padding-bottom:7px;
+    font-size:15px;
+}
+
+
+.tabs2 .chosen2{
+    color:black;
+    padding-bottom:8px;
+    border-bottom:3px solid #bababa;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+
+.synopsisbox{
+    background-color:white;
+    border:1px solid #ebebeb;
+    padding:15px;
+    color:#959595;
+    font-size:15px;
+    line-height:20px;
+    padding-bottom:50px;
+    background-image:url('../img/arrow2.svg');
+    background-repeat:no-repeat;
+    background-position:bottom 15px center;
+    background-size:15px;
+    margin-bottom:30px;
+}
+
+.synopsisbox-longer{
+    background-image:url('../img/arrow3.svg');
+
+}
+
+
+.synopsistext{
+    background-color:white;
+    max-height:220px;
+    overflow:hidden;
+    text-align:justify;
+}
+
+
+.synopsisbox .synopsistext-longer{
+    max-height:2000px;
+}
+
+.readmore, .readless{
+    display:none;
+}
+
+.gallerypics, .recpics{
+    background-color:transparent;
+    overflow-x:auto;
+    margin-right:-15px;
+    margin-left:-15px;
+    padding-left:15px;
+    margin-bottom:30px;
+}
+
+.gallerypiccontainer, .recpiccontainer{
+    background-color:transparent;
+    width:100%;
+    overflow:auto;
+    width:765px;
+}
+
+.recpiccontainer{
+    background-color:transparent;
+    width:615px;
+    font-size:13px;
+    line-height:17px;
+}
+
+.gallery, .rec{
+    width:138px;
+    float:left;
+    margin-right:15px;
+}
+
+.gallery img, .rec img{
+    width:100%;
+    height:auto;
+    margin-bottom:7px;
+}
+
+
+.admissionrulesbox{
+    background-color:white;
+    border:1px solid #ebebeb;
+    padding:15px;
+    color:#959595;
+    font-size:15px;
+    line-height:20px;
+    margin-bottom:30px;
+}
+
+.admissionrulesbox .two{
+    margin-bottom:0px;
+}
+
+.fb{
+    width:100%;
+    background-color:#f6f7f8;
+    height:290px;
+    margin-bottom:30px;
+    font-size:15px;
+    color:#4e5665;
+
+}
+
+.fb-header{
+    background-color:purple;
+    height:60%;
+    padding:15px;
+    overflow:auto;
+    position:relative;
+    background-image:url('../img/fb-cover-image.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:white;
+
+}
+
+.fb-name{
+    background-color:transparent;
+    width:100%;
+    height:50%;
+    padding-left:75px;
+    background-image:url('../img/fb-lamc.jpg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    text-shadow:0 0 2px black;
+    line-height:23px;
+}
+
+.fb-lamc{
+    font-size:20px;
+}
+
+.fb-like{
+    width:115px;
+    position:absolute;
+    bottom:15px;
+    padding:5px;
+    left:15px;
+    background-color:#f7f8f9;
+    border-radius:5px;
+    color:#4e5665;
+    padding-left:35px;
+    background-image:url('../img/fb-fb.svg');
+    background-position:7px;
+    background-repeat:no-repeat;
+    background-size:20px;
+}
+
+.fb-share{
+    width:90px;
+    float:right;
+    position:absolute;
+    bottom:15px;
+    padding:5px;
+    right:15px;
+    background-color:#f7f8f9;
+    border-radius:5px;
+    color:#4e5665;
+    padding-left:35px;
+    background-image:url('../img/fb-share.svg');
+    background-position:10px;
+    background-repeat:no-repeat;
+    background-size:16px;
+}
+
+.fb-ppl{
+    width:calc(100% - 30px);
+    background-color:white;
+    height:calc(40% - 30px);
+    margin-top:15px;
+    margin-left:15px;
+    margin-right:15px;
+    margin-bottom:15px;
+    border-radius:5px;
+    border:1px solid #f1f2f3;
+    padding:10px;
+
+}
+
+.fb-ppl img{
+    height:40px;
+    width:auto;
+    margin-top:3px;
+}
+
+
+.ticketbar{
+    background-color:white;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-image:url('../img/stripes.png');
+    border-top:1px solid #e1e1e1;
+    overflow:auto;
+    font-size:15px;
+    z-index:3;
+
+}
+
+
+.ticketgradient{
+    background: linear-gradient(rgba(255,255,255,0), #f1f1f1); 
+    opacity:0.7;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+}
+
+
+.text{
+    margin:0;
+    position:relative;
+    z-index:2;
+    width:50%;
+    background-color:transparent;
+    color:#959595;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:20px;
+    background-image:url('../img/arrow3.svg');
+    background-repeat:no-repeat;
+    background-position:right 20px center;
+    background-size:15px;
+    float:left;
+    cursor:pointer;
+}
+
+.ticketbar-price{
+    display:none;
+}
+
+
+.buyticket{
+    float:left;
+    margin:0;
+    position:relative;
+    z-index:2;
+    width:50%;
+    background: linear-gradient(#5aa7f7,#3178c2);
+    color:white;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:15px;
+    padding-right:15px;
+    box-shadow:0px;
+    text-align:center;
+}
+
+.nope{
+    display:inline-block;
+    margin:0;
+}
+
+
+.ticketpopup{
+    background-color:white;
+    width:100%;
+    position:fixed;
+    bottom:-100%;
+    left:0;
+    border-radius: 10px 10px 0 0;
+    overflow:auto;
+    font-size:15px;
+    border:1px solid #f1f1f1;
+    transition:0.3s;
+    opacity:1;
+    z-index:2;
+    box-shadow:  0px 0px 10px 0px #bababa;
+}
+
+
+.visible{
+    opacity:1;
+    bottom:81px;
+}
+
+.ticketcat{
+    background-color:white;
+    padding:25px;
+    border-bottom:1px solid #f1f1f1;
+    overflow:auto;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+
+}
+
+.catprice{
+    background-color:transparent;
+    width:50%;
+    font-size:20px;
+    color:#5aa7f7;
+    font-weight:bold;
+    float:left;
+}
+
+.cattype{
+    font-size:13px;
+    color:#959595;
+    background-color:transparent;
+    margin:0;
+    font-weight:normal;
+    line-height:15px;
+
+}
+
+.choosetix{
+    background-color:transparent;
+    width:45%;
+    font-size:20px;
+    color:#5aa7f7;
+    font-weight:bold;
+    display:flex;
+    align-items: center;
+    position:relative;
+    margin-left:5%;
+}
+
+.minus{
+    width:30px;
+    height:30px;
+    background-color:transparent;
+    background-image:url('../img/minus.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    border:0;
+    position:absolute;
+    left:0;
+    cursor:pointer;
+}
+
+
+.disabled{
+    background-image:url('../img/minus-disabled.png');
+}
+
+.plus{
+    width:30px;
+    height:30px;
+    background-color:transparent;
+    background-image:url('../img/plus.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    border:0;
+    position:absolute;
+    right:0;
+    cursor:pointer;
+}
+
+
+
+.quantity{
+    width:100%;
+    border:1px solid black;
+}
+
+.quantity2{
+    width:calc(100% - 60px);
+    text-align:center;
+    margin-left:30px;
+    color:#959595;
+    font-size:15px;
+    border:0;
+}
+
+
+
+select{
+    background-color:white;
+    width:100px;
+    padding:10px;
+    border-radius:5px;
+    border:2px solid #b2b2b2;
+    color:#959595;
+}
+
+
+/* =========================================MOBILE FOOTER============================================= */
+
+
+.footer{
+    z-index:0;
+    background-color:#f7f7f7;
+    position:relative;
+    width:100%;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:20px;
+    padding-bottom:100px;
+    box-shadow:  0px 0px 0px 0px #bababa;
+
+
+}
+
+
+
+.subscribe, .service, .account, .sistic{
+    background-color:#f7f7f7;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:0px;
+    border-bottom:2px solid #ebebeb;
+    background-image:url('../img/plus.svg');
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:17px;
+    margin-bottom:0px;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+
+.off-dropdown{
+    background-image:url('../img/minus.svg');
+    color:#5aa7f7;
+    border-bottom:2px solid #5aa7f7;  
+}
+
+/*.accordion-div{
+    background-color:transparent;
+    height:0;
+    overflow:hidden;
+    transition:all 0.2s linear;
+    font-size: 15px;
+    color: #959595;
+    opacity:0;
+    display:none;
+}*/
+
+
+.mobfooter a{
+    color: #959595;
+    font-size:15px;
+}
+
+.first{
+    background-color:transparent;
+    height:150px;
+    opacity:1;
+    display:none;
+    font-size: 15px;
+    color: #959595;
+    padding-top:20px;
+}
+
+.second{
+    background-color:transparent;
+    height:305px;
+    opacity:1;
+    display:none;
+    color: #959595;
+}
+
+.third{
+    background-color:transparent;
+    height:190px;
+    opacity:1;
+    display:none;
+    color: #959595;
+}
+
+.fourth{
+    background-color:transparent;
+    height:225px;
+    opacity:1;
+    display:none;
+    color: #959595;
+}
+
+
+
+.cc{
+    padding-top:25px;
+    padding-bottom:15px; 
+    font-size:12px;
+    color:#959595;
+    line-height:15px;
+}
+
+.poweredby{
+    padding-top:15px;
+    padding-bottom:15px; 
+    text-align:left;
+    padding-left:0;
+    padding-right:0;
+}
+
+.poweredby img{
+    height:50px;
+    width:auto;
+}
+
+
+
+footer{
+    display:block;
+}
+
+.desfooter{
+    display:none;
+}
+
+
+.subscribebox{
+    width:300px;
+    padding:10px;
+    background-color:white;
+    border-radius:5px;
+    border:1px solid #5aa7f7;
+    overflow:auto;
+
+}
+
+
+input[type=email]:focus{
+    outline:none;
+    color:#b2b2b2;
+
+}
+
+.email{
+    text-transform:uppercase;
+    font-style:italic;
+    float:left;
+    width:180px;
+    border:1px solid transparent;
+}
+
+
+.subscribesubmit{
+    width:100px;
+    background-color:#5aa7f7;
+    float:right;
+    color:white;
+    margin:-10px;
+    padding:13px;
+    border:0;
+}
+
+.ulfooter1{
+    width:calc(50% - 15px);
+    float:left;
+}
+
+.ulfooter2{
+    width:calc(50% - 15px);
+    float:right;
+}
+
+.ulfooter1 li, .ulfooter2 li{
+    list-style-type:none;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.ulfooter1 li:first-child, .ulfooter2 li:first-child, .ulfooter3 li:first-child{
+    padding-top:0px;
+}
+
+
+.ulfooter3{
+    padding-left:0;
+    font-size:12px;
+    color:#959595;
+    padding-top:20px;
+}
+
+.ulfooter3 li{
+    list-style-type:none;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.p2{
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:12px;
+    color:#959595;
+    line-height:14px;
+    margin-bottom:0;
+    padding-left:0;
+}
+
+
+
+
+/* =================================================================================================
+====================================================================================================
+=================================================TABLET=============================================
+====================================================================================================
+================================================================================================= */
+
+
+/* TABLET */
+@media only screen and (min-width:768px){
+    /*on this week*/
+
+
+/* ===========================================TABLET HEADER============================================= */
+
+
+.tablet{
+    display:block;
+}
+
+.mobile{
+    display:none;
+}
+
+body{
+    padding-top:105px;
+
+}
+
+.header-grey{
+display:none;
+}
+
+.header-white{
+    padding:25px;
+    padding-top:25px;
+    padding-bottom:25px;
+    height:105px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.icons{
+    background-color:transparent;
+    padding-left:0px;
+    overflow:auto;
+    right:25px;
+}
+
+.hamburgermenuicon{
+    width:40px;
+    height:40px;
+    background-color:transparent;
+    display:inline-block;
+    background-image:url('../img/menu.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    margin-left:25px;
+}
+
+.searchicon{
+    display:none;
+}
+
+input[type=search]:focus{
+    outline:none;
+}
+
+.searchbox{
+    display:block;
+    width:300px;
+    border:1px solid #ebebeb;
+    background-color:transparent;
+    height: 45px;
+    padding:10px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size:14px;
+}
+
+.search{
+    border:none;
+    background-color:transparent;
+    color:#b2b2b2;
+    width:230px;
+}
+
+::placeholder{
+    color:#b2b2b2;
+}
+
+.submit{
+    width:30px;
+    height:22px;
+    float:right;
+    background-color:transparent;
+    border:none;
+    background-image:url('../img/iconmonstr-magnifier-2.svg');
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:contain;
+
+}
+
+
+/* =========================================TABLET HOME PAGE============================================= */
+
+
+.onthisweekdes{
+    display:none;
+}
+
+.onthisweek{
+    display:block;
+}
+
+.onthisweek h1{
+    padding-left:25px;
+}
+
+.onthisweek p{
+    padding-right:25px;
+}
+
+
+.days{
+    width:1120px;
+}
+
+.oneday{
+    width:170px;
+}
+
+
+
+
+
+
+
+
+
+/*BODY*/
+
+.carousel{
+    width:100%;
+    background-color:blue;
+    height:370px;
+    margin-bottom:0px;
+}
+
+.carousel-img{
+    margin-bottom:-230px;
+}
+
+.carousel-header{
+    background-color:transparent;
+    font-size:16px;
+    padding-left:25px;
+    padding-right:25px;
+    bottom:40px;
+}
+
+.prev, .next{
+    width:35px;
+    height:35px;
+}
+
+.carousel-header h1{
+    padding-top:40px;
+    font-size:35px;
+    color:white;
+}
+
+.pmobile{
+    display:none;
+}
+
+.ptabdes{
+    display:block;
+}
+
+.dots{
+    width:150px;
+    height:17px;
+    background-color:transparent;
+    position:absolute;
+    bottom:15px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+
+.selecteddot{
+    background: linear-gradient(#5aa7f7,#2965a3);
+    width:12px;
+    height:12px;
+    border-radius:17px;
+    display:inline-block;
+}
+
+.normaldot{
+    background-color:white;
+    opacity:0.5;
+    width:12px;
+    height:12px;
+    border-radius:17px;
+    display:inline-block;
+}
+
+
+.dayswrapper{
+    background-color:transparent;
+    padding-left:25px;
+}
+
+
+.newreleases-tab-container{
+    padding:0;
+}
+
+
+
+
+.newrelease{
+    background-color:transparent;
+    padding-left:0;
+    padding-right:0;
+    overfloat:auto;
+}
+
+.newrelease select{
+    margin-top:-10px;
+}
+
+.newrelease .tabs{
+    margin:0;
+    margin-bottom:25px;
+    width:70%;
+    float:left;
+}
+
+.newrelease .p{
+    margin:0;
+    margin-bottom:25px;
+    padding:0;
+    width:25%;
+    float:right;
+}
+
+
+.eventswrapper{
+    background-color:transparent;
+    clear:both;
+    height:790px;
+    width:100%;
+    overflow:hidden;
+}
+
+
+
+.eventdes{
+    margin-bottom:50px;
+}
+
+.eventdes img{
+    width:100%;
+    height:auto;
+}
+
+
+
+.eventdes a:hover{
+    text-decoration:none;
+}
+
+.eventdes a:hover .title-span{
+    padding-bottom:2px;
+    border-bottom:2px solid black;
+
+}
+
+
+.viewall{
+    margin-top:0px;
+}
+
+
+
+
+.promo{
+    display:block;
+    padding:20px;
+    height:340px;
+}
+
+.promo2{
+    width:50%;
+    float:left;
+}
+
+.masterpass{
+    float:right;
+    padding-top:20px;
+}
+
+
+/* ========================================TABLET SEARCH PAGE============================================= */
+
+
+.searchshow{
+    text-align:left;
+}
+
+
+.viewby{
+    float:left;
+    display:block;
+    background-color:transparent;
+    width:280px;
+
+}
+
+.buttons .p{
+    width:380px;
+    float:right;
+    margin-bottom:25px;
+    background-color:transparent;
+    display:flex;
+    align-items:center;
+    color:#959595;
+}
+
+.DATE{
+    color:#959595;
+    background: linear-gradient(#f1f1f1,#e0dfdf);
+    padding:10px;
+    width:90px;
+    margin-left:10px;
+    margin-right:10px;
+    border-radius:5px;
+    border:0;
+}
+
+.PRICE{
+    color:#959595;
+}
+
+.indicator{
+    float:right;
+}
+
+
+
+
+.resultbox:hover{
+    background-color:#eef6fe;
+    cursor:pointer;
+
+}
+
+.resultbox{
+    background-color:white;
+    position:relative;
+    overflow:auto;
+}
+
+
+
+.greendate2{
+    width:18%;
+}
+
+
+.available2{
+    width:15px;
+}
+
+
+.datentime{
+    float:left;
+    padding-top:20px;
+    margin-left:25px;
+    background-color:transparent;
+    color:#959595;
+}
+
+.blue{
+    color:#5aa7f7;
+}
+
+.eventsection2 {
+    background-color:transparent;
+    width:67%;
+    float:left;
+    color:black;
+    font-weight:bold;
+    font-size:15px;
+    padding-top:20px;
+    line-height:18px;
+    padding-bottom:10px;
+    margin-left:18%;
+}
+
+.eventsection2 img{
+    width:55%;
+    height:auto;
+    float:left;
+    margin-right:10px;
+}
+
+.category2{
+    display:none;
+}
+
+.venue3{
+    padding-top:10px;
+}
+
+.category3{
+    background-color:transparent;
+    padding-top:20px;
+    display:block;
+    width:15%;
+    float:left;
+}
+
+.venue3, .category3{
+    color:#959595;
+    font-size:15px;
+    font-weight:normal;
+}
+
+
+.showing{
+    padding-top:20px;
+    text-align:right;
+    color:#959595;
+}
+
+
+
+.searchpopup{
+    display:none;
+}
+
+
+
+/* ======================================TABLET PARAMORE PAGE============================================= */
+
+
+
+.artistbgimg{
+    width:100%;
+    background-color:blue;
+    height:370px;
+    margin-bottom:0px;
+}
+
+.artistbgimg-img{
+    background-position:0px -20px;
+}
+
+
+.artistinfo{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:25px;
+    background-color:transparent;
+    color:#959595;
+    font-size:15px;
+    line-height:30px;
+    padding-bottom:35px;
+    overflow:auto;
+}
+
+.artistinfo h1{
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    margin-bottom:35px;
+    margin-top:25px;
+}
+
+.artistdp{
+    display:block;
+    width:170px;
+    height:auto;
+    float:left;
+    margin-right:25px;
+}
+
+.dateicon, .timeicon, .locationicon{
+    display:block;
+}
+
+.dateicon{
+    float:left;
+    width:15px;
+    height:30px;
+    background-color:transparent;
+    margin-right:10px;
+    background-image:url('../img/dateicon.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:15px;
+}
+
+
+.timeicon{
+    float:left;
+    width:15px;
+    height:30px;
+    background-color:transparent;
+    margin-right:10px;
+    background-image:url('../img/timeicon.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:15px;
+}
+
+.locationicon{
+    float:left;
+    width:15px;
+    height:30px;
+    background-color:transparent;
+    margin-right:10px;
+    background-image:url('../img/locationicon.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:15px;
+}
+
+
+
+.ticketing{
+    padding:25px;
+    overflow:auto;
+}
+
+
+.twocolumns{
+    background-color:transparent;
+    overflow:auto;
+}
+
+.blockquote{
+    float:left;
+    width:49%;
+    margin-bottom:0;
+}
+
+.typeandprice{
+    float:right;
+    width:49%;
+    margin-top:10px;
+}
+
+
+
+.bodycontent{
+    width:100%;
+    background-color:white;
+    padding-bottom:30px;
+    color:#959595;
+    padding:25px;
+}
+
+.synopsisbox{
+    background-color:white;
+    border:1px solid #ebebeb;
+    padding:25px;
+    color:#959595;
+    font-size:15px;
+    line-height:20px;
+    padding-bottom:70px;
+    background-image:url('../img/arrow2.svg');
+    background-repeat:no-repeat;
+    background-position:bottom 40px center;
+    background-size:15px;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.synopsisbox-longer{
+    background-image:url('../img/arrow3.svg');
+
+}
+
+
+.readmore{
+    display:block;
+    margin:0;
+    position:absolute;
+    bottom:15px;
+    background-color:transparent;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align:center;
+    color:#959595;
+}
+
+.readmore-nope{
+    display:none;
+}
+
+.readless{
+    display:none;
+    margin:0;
+    position:absolute;
+    bottom:15px;
+    background-color:transparent;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align:center;
+    color:#959595;
+}
+
+.readless-yes{
+    display:block;
+}
+
+.gallerypics, .recpics{
+    background-color:transparent;
+    margin-bottom:30px;
+    margin-right:-25px;
+    margin-left:-25px;
+    padding-left:25px;
+
+}
+
+.gallerypiccontainer, .recpiccontainer{
+    background-color:transparent;
+    overflow:auto;
+    width:910px;
+}
+
+.gallery{
+    width:165px;
+    float:left;
+    margin-right:15px;
+}
+
+
+
+.admissionrulesbox{
+    padding:25px;
+}
+
+
+.wrap1{
+    width:calc(50% - 7.5px);
+    float:left;
+}
+
+.wrap2{
+    width:calc(50% - 7.5px);
+    float:right;
+}
+
+.wrap3{
+    clear:both;
+}
+
+.recpiccontainer{
+    width:100%;
+}
+
+.rec{
+    width:155px;
+}
+
+
+.ticketcat{
+    padding-left:30px;
+    padding-right:30px;
+    border-bottom:1px solid #f1f1f1;
+    overflow:auto;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.catprice{
+    background-color:transparent;
+    width:70%;
+    font-size:20px;
+    color:#5aa7f7;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+    font-size:15px;
+}
+
+.catprice-ticket{
+    background-color:transparent;
+    width:13%;
+    background-image:url('../img/ticketlabeldivider.png');
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:contain;
+    font-size:15px;
+}
+
+
+.cattype{
+    font-size:15px;
+    color:#959595;
+    background-color:transparent;
+    width:87%;
+    margin:0;
+    font-weight:normal;
+    line-height:15px;
+    padding-left:5%;
+}
+
+.choosetix{
+    width:25%;
+}
+
+
+.ticketbarcontainer{
+    background-color:transparent;
+    overflow:auto;
+    max-width:720px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    box-shadow: 0px 0px 10px 5px #ebebeb;
+}
+
+.ticketpopup{
+    max-width:720px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    box-shadow:  0px 0px 3px 0px #bababa;
+}
+
+.text{
+    width:50%;
+    background-color:rgba(255,255,255,0.5);
+    color:#959595;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:20px;
+    background-image:url('../img/arrow3.svg');
+    background-repeat:no-repeat;
+    background-position:right 20px center;
+    background-size:15px;
+    float:left;
+    box-shadow:  0px 0px 10px 5px #ebebeb;
+}
+
+.ticketbar-price{
+    display:block;
+    width:25%;
+    background-color:transparent;
+    color:#959595;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-repeat:no-repeat;
+    background-position:right 20px center;
+    background-size:15px;
+    float:left;
+    z-index:3;
+    text-align:center;
+    position:relative;
+}
+
+.buyticket{
+    width:25%;
+    padding-left:0px;
+    padding-right:0px;
+    text-align:center;
+    box-shadow:  0px 0px 10px 5px #ebebeb;
+}
+
+.nope{
+    display:none;
+}
+
+
+
+/* ==========================================TABLET FOOTER============================================= */
+
+
+.footer{
+    overflow:auto;
+    padding:25px;
+    padding-bottom:100px;
+}
+
+.cc{
+    background-color:transparent;
+    margin:0;
+    float:left;
+    width:70%;
+}
+
+.poweredby{ 
+    float:right;
+    text-align:right;
+    background-color:transparent;
+    margin:0;
+}
+
+.mobfooter{
+    display:block;
+}
+
+.desfooter{
+    display:none;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+/* =================================================================================================
+====================================================================================================
+=================================================DESKTOP=============================================
+====================================================================================================
+================================================================================================= */
+
+
+/* DESKTOP */
+@media only screen and (min-width:1024px){
+
+
+/* ========================================DESKTOP HEADER============================================= */
+
+.nondes{
+    display:none;
+}
+
+.mobile{
+    display:none;
+}
+
+.desktop{
+    display:block;
+}
+
+body{
+    font-size:14px;
+    padding-top:145px;
+
+}
+
+.header-grey{
+    display:block;
+    background-color:#e1e1e1;
+    width:100%;
+    height:40px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:101;
+}
+
+.innerheader-grey{
+    background-color:transparent;
+    padding-top:10px;
+    overflow:auto;
+    max-width:960px;
+    margin:auto;
+}
+
+.links{
+    background-color:transparent;
+    width:195px;
+    float:right;
+    overflow:auto;
+    color:#959595;
+}
+
+.links a{
+    color:#959595;
+}
+
+.facebook{
+    display:block;
+    float:left;
+    height:20px;
+    width:35px;
+    background-image:url('../img/facebook.svg');
+    background-repeat:no-repeat;
+    background-position:left;
+    background-size:20px;
+}
+
+.login, .cart{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.header-white{
+    top:40px;
+    position:fixed;
+}
+
+.nav{
+    display:block;
+    background-color:transparent;
+    margin-left:40px;
+    color:#b2b2b2;
+}
+
+.nav ul{
+    padding-left:0;
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+
+.nav li{
+    list-style-type: none;
+    display:inline-block;
+    margin-right:20px;
+    margin-right:20px;
+}
+
+.nav li a{
+    color:#b2b2b2;
+}
+
+.hamburgermenuicon{
+    display:none;
+}
+
+.hiddencontainer{
+    position:relative;
+}
+
+.icons{
+    position:absolute;
+    right:0px;
+}
+
+/* =========================================DESKTOP HOME PAGE============================================= */
+
+/*on this week*/
+
+.onthisweek{
+    display:none;
+    }
+
+.graybg .container{
+    padding:0;
+}
+
+.onthisweekdes{
+    display:block;
+    background-color:transparent;
+    clear:both;
+    margin-top:0px;
+    color:#959595;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom:15px;
+}
+
+.graybg{
+    width:100%;
+    background-color:#f7f7f7;
+}
+
+
+.dots{
+    bottom:25px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+
+.onthisweekdes h1{
+    float:left;
+    padding:0;
+}
+
+.onthisweekdes p{
+    text-align:right;
+    margin:0;
+    padding:0;
+}
+
+.onthisweekdes .row{
+    clear:both;
+}
+
+
+
+.newrelease{
+    background-color:transparent;
+    padding-top:30px;
+    overflow:auto;
+    position:relative;
+}
+
+
+.eventswrapper{
+    background-color:transparent;
+    clear:both;
+    height:900px;
+}
+
+.eventdes{
+    margin-bottom:50px;
+}
+
+.eventdes img{
+    width:100%;
+    height:auto;
+}
+
+
+.promo{
+    display:none;
+}
+
+.promodes1 {
+    display:block;
+    background-image:url('../img/stripes.png');
+    width:100%;
+    height:350px;
+    padding:15px;
+    color:#959595;
+    line-height:20px;
+    margin-top:20px;
+}
+
+
+
+.promodes2{
+    width:50%;
+    height:300px;
+    display:block;
+    margin:auto;
+    background-color:transparent;
+    position:relative;
+    padding:20px;
+}
+
+.promodes2 h1{
+    margin-bottom:65px;
+}
+
+    .promodes2 p{
+    margin-bottom:25px;
+}
+
+
+.promo2{
+    width:50%;
+    background-color:transparent;
+}
+
+.masterpass img{
+    width:50%;
+    height:auto;
+}
+
+.masterpass{
+    position:absolute;
+    top:-90px;
+    right:-25px;
+}
+
+
+
+
+
+
+
+/*BODY*/
+
+.carousel{
+    width:100%;
+    background-color:blue;
+    height:650px;
+}
+
+.carousel-img{
+    margin-bottom:-350px;
+}
+
+.carousel-header{
+    background-color:transparent;
+    max-width:960px;
+    margin:auto;
+    position:relative;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.carousel-header h1{
+    padding-top:150px;
+    margin-bottom:10px;
+}
+
+.ptabdes{
+    padding-bottom:5px;
+}
+
+.newrelease .tabs{
+    margin-bottom:40px;
+}
+
+.newrelease{
+    padding-top:50px;
+}
+
+
+/* ========================================DESKTOP SEARCH PAGE============================================= */
+
+h1 {
+    color:#959595;
+    font-size:20px;
+}
+
+.trail{
+    background-color:transparent;
+}
+
+.buttons{
+    overflow:auto;
+    background-color:white;
+}
+
+.showing2{
+    background-color:transparent;
+}
+
+.searchsidebar{
+    background-color:white;
+    width:25%;
+    float:left;
+}
+
+button:focus, select:focus{
+    outline:none;
+}
+
+button, select{
+    cursor:pointer;
+}
+
+.venues:hover{
+    border:1px solid #5aa7f7;
+}
+
+.checkbox, .checkbox li{
+    list-style-type:none;
+    padding-left:0;
+
+}
+
+#comedy, #concert, #dance, #familyentertainment, #filmmovies{
+
+    margin-right:5px;
+}
+
+.viewmore{
+    background-color:#f1f1f1;
+    width:100%;
+    border:0;
+    padding:15px;
+    color:#b2b2b2;
+    background-image:url('../img/arrow2.svg');
+    background-repeat:no-repeat;
+    background-position:30% center;
+    background-size:15px;
+    padding-left:30px;
+    border-radius:5px;
+    margin-bottom:20px;
+
+}
+
+.venues{
+    width:100%;
+    padding:15px;
+    border:1px solid #b2b2b2;
+    margin-bottom:30px;
+}
+
+
+
+.searchsubmit{
+    background-color:#5aa7f7;
+    width:100%;
+    border:0;
+    padding:15px;
+    color:white;
+    border-radius:5px;
+}
+
+.contentbar{
+    float:right;
+    background-color:white;
+    width:75%;
+    height:850px;
+    background-image:url('../img/divider.png');
+    background-repeat:no-repeat;
+    background-position:-20px 0px;
+    padding-left:100px;
+    overflow:auto;
+    overflow:hidden;
+}
+
+.buttons .p{
+    background-color:transparent;
+    float:right;
+    margin-bottom:20px;
+}
+
+.viewby{
+    float:right;
+
+}
+
+
+.labelling{
+    clear:both;
+    background-color:transparent;
+    padding-bottom:-10px;
+    margin-bottom:20px;
+    overflow:auto;
+    overflow-y:hidden;
+}
+
+.datelabel{
+    height:28px;
+    width:15%;
+    margin-right:0px;
+    background-color:transparent;
+    float:left;
+    border-bottom:2px solid #ebebeb;
+}
+
+.eventlabel{
+    height:28px;
+    width:55%;
+    background-color:transparent;
+    float:left;
+    border-bottom:2px solid #ebebeb;
+}
+
+.venuelabel{
+    height:28px;
+    width:15%;
+    margin-right:0px;
+    background-color:transparent;
+    float:left;
+    border-bottom:2px solid #ebebeb;
+}
+
+.categorylabel{
+    height:28px;
+    width:15%;
+    background-color:transparent;
+    float:left;
+    border-bottom:2px solid #ebebeb;
+}
+
+
+.chosen2{
+    background-color:transparent;
+    color:#959595;
+    padding-bottom:6px;
+    border-bottom:3px solid #bababa;
+    width:40px;
+}
+
+.chosen3{
+    background-color:transparent;
+    color:#959595;
+    padding-bottom:6px;
+    border-bottom:3px solid #bababa;
+    width:45px;
+}
+
+.chosen4{
+    background-color:transparent;
+    color:#959595;
+    padding-bottom:6px;
+    border-bottom:3px solid #bababa;
+    width:65px;
+}
+
+
+
+.resultbox{
+    background-color:white;
+    border:1px solid #ebebeb;
+    transition:all 0.2s;
+    padding-left:0;
+
+}
+
+.resultbox:hover{
+    background-color:#eef6fe;
+    cursor:pointer;
+}
+
+.greendate{
+    width:15%;
+    background-color:transparent;
+    overflow:auto;
+    float:left;
+}
+
+.available{
+    float:left;
+    width:15px;
+    height:135px;
+    background-color:#8dc63f;
+}
+
+.datentime{
+    float:left;
+    padding-left:10px;
+    padding-top:20px;
+    background-color:transparent;
+    color:#959595;
+    margin:0;
+}
+
+.blue{
+    color:#5aa7f7;
+}
+
+.eventsection {
+    float:left;
+    background-color:transparent;
+    width:55%;
+    color:black;
+    font-weight:bold;
+    font-size:15px;
+    padding-top:20px;
+    overflow:auto;
+    line-height:18px;
+    padding-bottom:20px;
+}
+
+.eventsection img{
+    float:left;
+    padding-right:10px;
+}
+
+.venue, .category{
+    float:left;
+    width:15%;
+    background-color:transparent;
+    padding-top:20px;
+    color:#959595;
+}
+
+/*advanced search*/
+
+
+.searchbox2{
+    border-radius:5px;
+    border:1px solid #5aa7f7;
+    padding:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:15px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow:auto;
+    margin-bottom:15px;
+}
+
+.search2{
+    background-color:transparent;
+    width:85%;
+    color:#5aa7f7;
+    border:0;
+    height:30px;
+}
+
+
+
+.search2::placeholder{
+        color:#5aa7f7;
+ }
+
+.submit2{
+    height:22px;
+    width:15%;
+    float:right;
+    background-color:transparent;
+    border:none;
+    background-image:url('../img/iconmonstr-magnifier-2-2.svg');
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:contain;
+
+    }
+
+ 
+/*those w calendar icon*/
+/*advanced search*/
+
+
+.label{
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.calendar{
+    border-radius:5px;
+    border:1px solid #b2b2b2;
+    padding:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:15px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow:auto;
+        margin-bottom:15px;
+}
+
+.ddyymm{
+    background-color:transparent;
+    width:85%;
+    color:#b2b2b2;
+    border:0;
+    height:30px;
+}
+
+
+
+.ddyymm::placeholder{
+        color:#b2b2b2;
+ }
+
+input:focus{
+    outline:none;
+}
+
+.submit3{
+    height:22px;
+    width:15%;
+    float:right;
+    background-color:transparent;
+    border:none;
+    background-image:url('../img/date.svg');
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:contain;
+
+    pointer-events:none;
+
+    }
+
+
+
+/* =======================================DESKTOP PARAMORE PAGE============================================= */
+
+h1 {
+    color:#959595;
+    font-size:20px;
+}
+
+
+.artistbgimg{
+    height:500px;
+}
+
+.artistbgimg-img{
+    background-position:0px -50px;
+}
+
+
+.breadcrumb2{
+    display:block;
+    position:absolute;
+    top:0;
+    background-color:transparent;
+    max-width:960px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    padding-top:25px;
+    padding-left:0px;
+    color:white;
+    font-size:15px;
+    text-align:left;
+    margin-bottom:15px;
+
+}
+
+
+.artistinfo{
+    max-width:960px;
+    padding-left:0px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+
+
+.desktopwrapper{
+    background-color:white;
+    max-width:960px;
+    margin:auto;
+    overflow:auto;
+    padding-top:25px;
+}
+
+
+.ticketing{
+    background-color:transparent;
+    padding-left:0;
+    width:27%;
+    float:left;
+}
+
+.blockquote, .typeandprice{
+    width:100%;
+    margin-bottom:25px;
+    clear:both;
+}
+
+.dash{
+    clear:both;
+    width:100%;
+    height:2px;
+    background-color:#ebebeb;
+    margin-bottom:15px;
+}
+
+.smalltext{
+    margin-top:0px;
+}
+
+
+.bodycontent{
+    padding-left:0;
+    padding-right:0;
+    background-color:transparent;
+    width:73%;
+    float:right;
+    padding-left:6%;
+    background-image:url('../img/divider.png');
+    background-repeat:no-repeat;
+    background-position:-50px 10px;
+}
+
+.synopsisbox{
+    background-image:none;
+    padding-bottom:25px;
+}
+
+
+
+.synopsisbox .synopsistext-longer{
+    max-height:260px;
+}
+
+
+.synopsistext{
+    max-height:260px;
+    overflow:auto;
+    text-align:left;
+
+}
+
+.readmore, .readless{
+    display:none;
+}
+
+.gallerypics, .recpics{
+    background-color:transparent;
+    margin-right:0px;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+
+.gallerypiccontainer{
+    background-color:transparent;
+    width:885px;
+    overflow:auto;
+}
+
+.gallery-last, .rec-last{
+    margin-right:0px;
+}
+
+.recpiccontainer{
+    background-color:transparent;
+    width:665px;
+    overflow:auto;
+}
+
+
+.ticketbarcontainer{
+    max-width:960px;
+}
+
+
+.text{
+    width:60%;
+}
+
+.ticketbar-price{
+    width:20%;
+}
+
+.buyticket{
+    width:20%;
+}
+
+
+.ticketpopup-desktop{
+    width:calc(60% - 5px);
+    margin-left:5px;
+    border-radius: 10px 10px 0 0;
+    border:1px solid #f1f1f1;
+    background-color:white;
+    box-shadow:  0px 0px 3px 0px #bababa;
+
+}
+
+
+.ticketpopup{
+    max-width:970px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    border:0;
+    background-color:transparent;
+    overflow:hidden;
+    box-shadow:none;
+    padding-top:5px;
+}
+
+
+
+
+
+.catprice-ticket{
+    width:15%;
+}
+
+.cattype{
+    width:85%;
+}
+
+.ticketcat{
+    height:81px;
+    overflow:hidden;
+    background-color:transparent;
+}
+
+.choosetix{
+    opacity:0;
+}
+
+.ticketcat:hover .choosetix{
+    opacity:1;
+}
+
+.ticketcat:hover{
+    background-color:#eef6fe;
+}
+
+.ticketcat-desktop:hover{
+    background-color:#eef6fe;
+    border-radius:10px 10px 0 0;
+}
+
+.quantity2{
+    background-color:white;
+    height:35px;
+    border-radius:5px;
+    border:1px solid #959595;
+    width:calc(100% - 80px);
+    margin:auto;
+}
+
+.plus{
+    background-image:url('../img/plus-desktop.png');
+}
+
+.minus{
+    background-image:url('../img/minus-desktop.png');
+}
+
+
+
+button:focus, select:focus{
+    outline:none;
+}
+
+button, select{
+    cursor:pointer;
+}
+
+
+input:focus{
+    outline:none;
+}
+
+
+
+/* =========================================DESKTOP FOOTER============================================= */
+
+
+.mobfooter{
+    display:none;
+}
+
+.footer{
+    z-index:1;
+    position:absolute;
+    padding-bottom:50px;
+}
+
+.desfooter{
+    padding-top:70px;
+    padding-bottom:70px;
+    display:block;
+    padding-left:0;
+    padding-right:0;
+}
+
+.desfooter p, .desfooter .p2{
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:12px;
+    color:#959595;
+    line-height:14px;
+    margin-bottom:0;
+    padding-left:0;
+}
+
+.desfooter a{
+    color:#959595;
+}
+
+
+
+
+.line{
+    margin-top:20px;
+    margin-bottom:20px;
+    height:2px;
+    background-color:#ebebeb;
+    margin-left:15px;
+    margin-right:15px;
+    width:100%;
+}
+
+.cc{
+    padding-top:15px;
+}
+
+.poweredby{
+    padding-right:15px;
+}
+
+
+
+}
+
+
+
+/* =================================================================================================
+====================================================================================================
+=============================================DESKTOP (wide)=========================================
+====================================================================================================
+================================================================================================= */
+
+
+
+@media only screen and (min-width:1200px){
+
+/* ========================================WIDE DESKTOP HEADER============================================ */
+
+.innerheader-grey{
+    max-width:1140px;
+}
+
+.hiddencontainer{
+    max-width:1140px;
+}
+
+/* =====================================WIDE DESKTOP HOME PAGE============================================= */
+
+
+.carousel-header{
+    max-width:1140px;
+    background-color:transparent;
+    padding:0;
+}
+
+/* =====================================WIDE DESKTOP PARAMORE PAGE========================================= */
+
+
+.breadcrumb2{
+    max-width:1140px;
+}
+
+.artistinfo{
+    max-width:1140px;
+}
+
+.desktopwrapper{
+    max-width:1140px;
+}
+
+
+.ticketbarcontainer{
+    max-width:1140px;
+}
+
+.ticketpopup{
+    max-width:1150px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
